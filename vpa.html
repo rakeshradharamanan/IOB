@@ -22,6 +22,7 @@
         .list-header {
             background-color: #035cfb !important;
             color: #c1c1c1;
+            font-size:large;
 
         }
 
@@ -35,7 +36,7 @@
 
         .list-group input[type="radio"]+.list-group-item:before {
             content: "\2022";
-            color: transparent;
+            background-color: #e0e0e040;
             font-weight: bold;
             margin-right: 1em;
         }
@@ -54,10 +55,14 @@
         }
 
         .breadcrumb {
+            font-size:large;
             padding: 1rem 0;
             margin: 0 !important;
             background-color: transparent !important;
 
+        }
+        .breadcrumb-item.active {
+            color: #ced4da;
         }
 
         footer {
