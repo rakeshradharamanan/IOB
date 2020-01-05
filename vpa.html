@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .container {
+            /* margin: 1rem 0; */
+        }
+
+        .value-text {
+            color: #929292;
+            font-size: small;
+        }
+
+        .list-header {
+            background-color: #035cfb !important;
+            color: #c1c1c1;
+
+        }
+
+        .list-group input[type="radio"] {
+            display: none;
+        }
+
+        .list-group input[type="radio"]+.list-group-item {
+            cursor: pointer;
+        }
+
+        .list-group input[type="radio"]+.list-group-item:before {
+            content: "\2022";
+            color: transparent;
+            font-weight: bold;
+            margin-right: 1em;
+        }
+
+        .list-group input[type="radio"]:checked+.list-group-item {
+            background-color: #28a745;
+            color: #FFF;
+        }
+
+        .list-group input[type="radio"]:checked+.list-group-item:before {
+            color: inherit;
+        }
+
+        .bg-dark {
+            background-color: #00458a !important;
+        }
+
+        .breadcrumb {
+            padding: 1rem 0;
+            margin: 0 !important;
+            background-color: transparent !important;
+
+        }
+
+        footer {
+            height: 4rem;
+        }
+
+        .btn-container {
+            background-color: #d0d0d0;
+            /* opacity: 0.7; */
+            text-align: center;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+            padding: 0.75rem;
+            left: 0;
+            bottom: 0;
+
+        }
+
+        .btn-iob {
+            background-color: #00458a !important;
+            width: 12rem;
+            color: #c1c1c1;
+        }
+
+        .form-group>.row {
+            margin: 0 !important;
+        }
+
+        .form-control-plaintext {
+            padding-top: 1.37rem;
+        }
+
+        #vpainput {
+            border: none;
+            border-bottom: 1px solid #ced4da;
+        }
+    </style>
+    <title>IOB</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-dark" aria-label="breadcrumb">
+
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Back</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Create Virtual Address</li>
+            </ol>
+            </a>
+            <img src="./iobimg.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        </nav>
+    </header>
+    <br>
+    <div class="container">
+
+        <form class="form-group">
+            <div class="form-row">
+                <div class="form-group col-9 col-md-6 col-sm-6">
+                    <label for="inputEmail4">Enter New VPA</label>
+                    <input type="email" class="form-control" id="vpainput" placeholder="VPA">
+                </div>
+                <div class="form-group col-3 col-md-6 col-sm-6">
+                    <label for=""></label>
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="@iob.net">
+                </div>
+            </div>
+
+            <div class="list-group">
+                <label class="list-group-item list-header">Select a suggested VPA</label>
+                <input type="radio" name="RadioInputName" value="Value1" id="Radio1" />
+                <label class="list-group-item value-text" for="Radio1">xxxxxxxxx@iob</label>
+                <input type="radio" name="RadioInputName" value="Value2" id="Radio2" />
+                <label class="list-group-item value-text" for="Radio2">xxx.xxxxxx@iob</label>
+                <input type="radio" name="RadioInputName" value="Value3" id="Radio3" />
+                <label class="list-group-item value-text" for="Radio3">xxx_xxxxxx@iob</label>
+                <input type="radio" name="RadioInputName" value="Value4" id="Radio4" />
+                <label class="list-group-item value-text" for="Radio4">xxxxxxx_123@iob</label>
+                <input type="radio" name="RadioInputName" value="Value5" id="Radio5" />
+                <label class="list-group-item value-text" for="Radio5">xxxxxxxxxx123@iob</label>
+
+            </div>
+
+        </form>
+
+    </div>
+    <br>
+    <footer>
+        <div class="btn-container">
+            <a class="btn btn-iob" href="#" role="button">Next</a>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
